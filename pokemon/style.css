@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p {
+    color: black;
+    font-size: 20px;
+}
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px;
+    text-transform: capitalize;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+.card {
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
