@@ -23,6 +23,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 90vw;
     height: 90vh;
 }
@@ -58,4 +59,19 @@ img {
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.moves{
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 16px;
+    max-height: 80vh;
+}
+
+.stats{
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 8px;
 }

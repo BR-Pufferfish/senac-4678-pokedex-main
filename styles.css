@@ -14,12 +14,6 @@ header {
     font-size: 32px;
 }
 
-body {
-    background-image: url("assets/bg.jpg");
-    background-size: 100%;
-    background-position: center;
-}
-
 ul {
     display: flex;
     gap: 24px;
