@@ -27,17 +27,17 @@ async function getPokemons(){
 
         const li = document.createElement("li")
        
-        const p = document.createElement("p")
-        p.innerText = pokemon.name
-
         const response = await fetch(pokemon.url)
         const infos = await response.json()
-        console.log(infos,"infos")
         li.classList.add(typesClasses[infos.types[0].type.name])
-         li.addEventListener("click",()=>{
+        li.addEventListener("click",()=>{
             localStorage.setItem("pokemon",JSON.stringify(infos))
             location.href = "/pokemon"
         })
+
+        const p = document.createElement("p")
+        p.innerText = `${infos.id} - ${infos.name}`
+
         const img = document.createElement("img")
         img.src = infos.sprites.front_default
         
