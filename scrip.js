@@ -18,6 +18,7 @@ const typesClasses = {
     steel: "steel",
     fairy: "fairy"
 };
+
 async function getPokemons(){
     const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
     const pokemons = await response.json()

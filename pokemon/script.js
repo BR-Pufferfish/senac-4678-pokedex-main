@@ -34,11 +34,6 @@ function getPokemon(){
     const type = document.createElement("p")
     type.innerText = "Type: " + infos.types[0].type.name
 
-    
-
-
-    
-    
     div.append(img,p,type,experience,abilities)
 
 }
